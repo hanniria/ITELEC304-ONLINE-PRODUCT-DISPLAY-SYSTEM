@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Product Display</title>
+</head>
+<body>
+    <h1>Product List</h1>
+    <ul>
+        {% for product in products %}
+            <li>{{ product.name }} - ₱{{ product.price|floatformat:0 }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
